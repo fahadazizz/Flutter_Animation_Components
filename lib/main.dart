@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animation_components/1_DailyMoodExperience/main_screen_dailymood.dart';
+import 'package:flutter_animation_components/2_CardReward/main_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
       themeMode: ThemeMode.dark,
-      home: MainScreenDailyMood(),
+      // home: MainScreenDailyMood(),
+      home: MainPage(),
     );
   }
 }
