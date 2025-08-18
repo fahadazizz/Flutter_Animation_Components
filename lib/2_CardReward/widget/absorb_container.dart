@@ -16,7 +16,7 @@ class AbsorbContainer extends StatelessWidget {
             blurRadius: 6,
             spreadRadius: 2,
             blurStyle: BlurStyle.outer,
-            offset: Offset(0, -5),
+            offset: Offset(4, -5),
           ),
         ],
       ),

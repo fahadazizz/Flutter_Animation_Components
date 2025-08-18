@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animation_components/2_CardReward/main_page.dart';
+
+import '2_CardReward/main_page.dart';
 
 void main() {
   runApp(const MyApp());
