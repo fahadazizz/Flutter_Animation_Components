@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '2_CardReward/main_page.dart';
+import '2_CardReward/main_page_daily_reward.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(useMaterial3: true),
       themeMode: ThemeMode.dark,
       // home: MainScreenDailyMood(),
-      home: MainPage(),
+      home: MainPageDailyReward(),
     );
   }
 }

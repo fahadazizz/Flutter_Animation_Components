@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animation_components/2_CardReward/widget/absorb_container.dart';
 import 'package:flutter_animation_components/2_CardReward/widget/arc_crousel.dart';
 
-class MainPage extends StatelessWidget {
-  const MainPage({super.key});
+class MainPageDailyReward extends StatelessWidget {
+  const MainPageDailyReward({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -38,9 +38,11 @@ class MainPage extends StatelessWidget {
                     Colors.redAccent,
                     Colors.greenAccent,
                     Colors.blueAccent,
-                    Colors.greenAccent,
+                    Colors.orangeAccent,
+                    Colors.purpleAccent,
+                    Colors.blueGrey,
                   ],
-                  length: 5,
+                  length: 7,
                 ),
                 Positioned(
                   bottom: -1,

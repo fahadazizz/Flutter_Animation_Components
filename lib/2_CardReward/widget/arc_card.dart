@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animation_components/2_CardReward/show_selected_card.dart';
 
 class ArcCard extends StatelessWidget {
   final bool isActive;
@@ -7,6 +8,7 @@ class ArcCard extends StatelessWidget {
   final double cardHeight;
   final Color color;
   final Function(double dy) onDragUpdate;
+  final double dragThreshold;
 
   const ArcCard({
     Key? key,
@@ -16,6 +18,7 @@ class ArcCard extends StatelessWidget {
     required this.cardHeight,
     required this.color,
     required this.onDragUpdate,
+    this.dragThreshold = 100.0,
   }) : super(key: key);
 
   @override
@@ -26,7 +29,18 @@ class ArcCard extends StatelessWidget {
           onDragUpdate(details.delta.dy);
         }
       },
-      onVerticalDragEnd: (details) {},
+      onVerticalDragEnd: (details) {
+        if (isActive) {
+          if (dragOffset > dragThreshold) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => ShowSelectedCard(color: color),
+              ),
+            );
+          }
+        }
+      },
       child: Transform(
         alignment: Alignment.center,
         transform: Matrix4.identity()
