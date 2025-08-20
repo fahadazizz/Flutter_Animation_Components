@@ -36,8 +36,8 @@ class MainPageDailyReward extends StatelessWidget {
                   colors: [
                     Colors.amber,
                     Colors.redAccent,
-                    Colors.greenAccent,
                     Colors.blueAccent,
+                    Colors.greenAccent,
                     Colors.orangeAccent,
                     Colors.purpleAccent,
                     Colors.blueGrey,
